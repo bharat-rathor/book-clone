@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact form</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .form{
+            height: 600px;
+            width:600px;
+            border: 2px solid white;
+            margin-left: 35%;
+            background-color: white;
+            padding-left: 180px;
+            border-radius: 20px;
+            padding-top: 10px;
+            margin-top: 50px;
+           
+            
+        }
+        body{
+            background-color: aliceblue;
+        }
+        .form:hover{
+          box-shadow: 10px 10px 10px  rgb(203, 191, 191), -10px -10px 10px  rgb(203, 191, 191);
+
+        }
+        label{
+            font-size: larger;
+            font-weight: bold;
+            text-align: center;
+        }
+         body{
+            background-color: aliceblue;
+        }
+        h1{
+            padding-left:43% ;
+        }
+        li{
+            display: inline;
+            padding-left:10px;
+        }
+        ul{
+            margin-left: 41%;
+            margin-top: 1%;
+        }
+        a{
+            font-size: large;
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+        }
+        a:hover{
+        box-shadow: 10px 10px 10px  rgb(203, 191, 191);
+        }
+        header{
+            height: 100px;
+            background-color: white;
+        }
+        h1:hover{
+            box-shadow: 10px 10px 10px  rgb(203, 191, 191), -10px -10px 10px  rgb(203, 191, 191);
+        }
+        header:hover{
+             box-shadow: 10px 10px 10px  rgb(203, 191, 191), -10px -10px 10px  rgb(203, 191, 191);
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        input{
+            padding: 9px;
+            width:50%;  
+            margin: 3px;
+            textarea{
+                margin: 3px;
+                padding: 9px;
+            }
+        }
+        button{
+
+            padding: 9px;
+            margin: 2px;
+            width: 60px;
+        }
+        label{
+            margin-bottom:20px;
+        }
+           .aboutsection{
+        float: left;
+        height: 200px;
+        width: 400px;
+            p{
+                text-align: justify;
+            }
+        }
+
+          .categories{
+            text-align: justify;
+            font-size:large;
+            height: 200px;
+            width: 330px;
+            display: inline-block;
+            font-weight: 900;
+            h3{
+                margin-left: 7%;
+            }
+
+        }
+
+        .mainfooter{
+            padding-left: 70px;
+        }
+        .contact_info{
+            display: inline-block;
+            margin-left:200px;
+
+            height: 50px;
+            width: 500px;
+            position: absolute;
+            font-size: large;
+        }
+        #contact{
+            font-size: large;
+            font-weight: bold;
+        }
+        .tagline{
+            display: inline-block;
+            position: absolute;
+            left: 70%;
+            font-size: large;
+            font-weight: bold;
+            h3{
+                padding-bottom: 3px;
+            }
+        }
+
+        .h3:hover{
+            font-weight: bolder;
+            
+            font-size: xx-large;
+        }
+                
+        p{
+        text-align: center;
+        font-size: large;
+        font-weight: bold;
+        }
+        h3{
+            text-align: center;
+            margin-top: 30px;
+        }
+        .mainfooter{
+            background-color: white;
+            margin-top: 40px;
+        }
+        footer{
+            width: 100%;
+        }
+        footer:hover{
+            box-shadow: 10px 10px 10px  rgb(203, 191, 191), -10px -10px 10px  rgb(203, 191, 191);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>E-Learning</h1>
+        <ul>
+            <li><a href="book.html">Home</a></li>
+            <li><a href="about.html" target="_blank">About us</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </header>
+    <form action="">
+        <div class="form">
+        <label for="name">Name</label><br>
+        <input type="text" placeholder="enter name" id="name"><br><br>
+
+        <label for="email">Email </label><br>
+        <input type="email" name="" placeholder="enter email" id="email"><br><br>
+
+        <label for="phone">Phone</label><br>
+        <input type="number" placeholder="enter number" id="phone"><br><br>
+        
+        <label for="age">Age</label><br>
+        <input type="number" placeholder="enter age" id="age"><br><br>
+        
+        <label for="address">Address</label><br>
+        <textarea name="" id="address" rows="8" cols="30">enter address</textarea>
+        <br><br>
+        <button>Submit</button>
+        <form action="book.html">
+            <button>Back</button>
+        </form>
+        </div>
+    </form>
+    <footer>
+        <div class="mainfooter">
+        <div class="aboutsection">
+            <h3 class="h3"> About Section</h3>
+            <p>Short description of your website:
+                “E_Learning is a simple educational platform providing books and study resources for students anytime, anywhere.”
+            </p>
+        </div>
+        <div class="categories">
+             <h3 style="margin-left: 50px; margin-bottom: 2px;" class="h3">Categories</h3>
+
+            <pre>
+                List your book or learning categories:
+                Programming (C, C++, Java, Python)
+                Web Development (HTML, CSS, JavaScript, Angular, React)
+                Databases (SQL, Oracle, MongoDB)
+                Computer Science Subjects (OS, COA, Networks)
+                Mathematics
+            </pre>
+        </div>
+        <div class="contact_info">
+            <h3 style="padding-bottom: 3px;" class="h3">Contact Information</h3>
+            <pre id="contact">
+                Email : support@elearning.com 
+                Location: India
+            </pre>
+        </div>
+
+        <div class="tagline">
+            <h3 class="h3">Tagline</h3>
+
+           <pre>
+            © 2026 E_Learning | Learn Anytime, Anywhere
+            Optional: “Free and Easy Learning for Everyone
+           </pre>
+        </div>
+        </div>  
+    </footer>
+    
+</body>
+</html>
